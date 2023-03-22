@@ -1,6 +1,6 @@
 from pathlib import Path
 from dotenv import load_dotenv
-import os
+import os, sys
 
 load_dotenv()
 
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'clients',
 ]
 
 MIDDLEWARE = [
@@ -113,3 +114,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Path apps
+
+PROJECT_ROOT = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(PROJECT_ROOT, '../apps/'))
