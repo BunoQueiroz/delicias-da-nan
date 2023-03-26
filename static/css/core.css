@@ -1,0 +1,11 @@
+.main-index {
+    background-image: url('../img/banner-prato-executivo.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.presentation {
+    background-color: #0000003b;
+    min-height: calc(100vh - 460px);
+}
