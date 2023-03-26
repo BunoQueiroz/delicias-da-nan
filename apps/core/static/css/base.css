@@ -1,0 +1,11 @@
+main {
+    min-height: calc(100vh - 460px);
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.parisienne {
+    font-family: 'Parisienne', cursive;
+}
