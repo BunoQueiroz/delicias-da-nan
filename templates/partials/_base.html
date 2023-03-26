@@ -10,17 +10,16 @@
         {% block title %}{% endblock title %} - Delícias da Nana
     </title>
     <link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block links %}
     
     {% endblock links %}
 </head>
 <body>
     {% include 'partials/_header.html' %}
-    <main>
-        {% block content %}
-        
-        {% endblock content %}
-    </main>
+    {% block content %}
+    
+    {% endblock content %}
     {% include 'partials/_footer.html' %}
 </body>
 <script src="{% static 'bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
