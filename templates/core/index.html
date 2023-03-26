@@ -1,7 +1,17 @@
 {% extends 'partials/_base.html' %}
 {% load static %}
 {% block title %}Página inicial{% endblock title %}
-
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Parisienne&display=swap" rel="stylesheet">
+{% endblock links %}
 {% block content %}
-
+<main class="main-index">
+    <section class="presentation text-center py-2">
+        <h4 class="text-danger fs-4 pacifico fw-semibold">Welcome to</h4>
+        <h1 class="text-center text-light display-1 fw-semibold parisienne">Delícias da Nana</h1>
+    </section>
+</main>
 {% endblock content %}
